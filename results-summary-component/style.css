@@ -4,3 +4,32 @@
     box-sizing: border-box;
 }
 
+body {
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.container .left-side {
+    width: 50%;
+    border: 1px solid red;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    padding: 30px 20px;
+}
+
+.container .right-side {
+    width: 50%;
+    border: 1px solid red;
+    padding: 30px 20px;
+}
