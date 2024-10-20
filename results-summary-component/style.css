@@ -151,3 +151,33 @@ body {
     color: white;
     background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));;
 }
+
+@media (max-width: 1200px) {
+    .container {
+        width: 60%;
+        height: auto;
+    }
+    .container .right-side button {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 750px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 100%;
+        height: auto;
+        display: block;
+        box-shadow: none;
+    }
+    .container .right-side, .container .left-side {
+        width: 100%;
+    }
+
+
+}
