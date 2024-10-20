@@ -160,6 +160,9 @@ body {
     .container .right-side button {
         margin-top: 20px;
     }
+    .container .right-side .right-side-title {
+        padding-bottom: 10px;
+    }
 }
 
 @media (max-width: 750px) {
