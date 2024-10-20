@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Hanken Grotesk';
 }
 
 body {
@@ -18,18 +19,63 @@ body {
     box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.3);
     border-radius: 20px;
     height: 400px;
+    width: 40%;
     overflow: hidden;
 }
 
 .container .left-side {
     width: 50%;
-    border: 1px solid red;
     background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 20px;
     padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+
+.container .left-side .left-side-title {
+    color: rgba(255, 255, 255, 0.736);
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.container .left-side .circle {
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container .left-side .circle .number {
+    font-size: 56px;
+    font-weight: bold;
+}
+
+.container .left-side .circle .per-cent {
+    color: rgba(255, 255, 255, 0.638);
+}
+
+.container .left-side .degree {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.container .left-side .note {
+    color: rgba(255, 255, 255, 0.723);
+    text-align: center;
+    padding: 0px 23px;
 }
 
 .container .right-side {
     width: 50%;
-    border: 1px solid red;
     padding: 30px 20px;
 }
