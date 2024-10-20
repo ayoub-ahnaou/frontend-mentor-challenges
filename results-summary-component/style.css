@@ -78,4 +78,39 @@ body {
 .container .right-side {
     width: 50%;
     padding: 30px 20px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .right-side .right-side-title {
+    color: black;
+    font-weight: bold;
+    text-align: left;
+    font-size: 20px;
+}
+
+.container .right-side .list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    height: 70%;
+}
+
+.container .right-side .list .item {
+    display: flex;
+    justify-content: space-between;
+    background: rgb(252, 228, 228);
+    padding: 13px;
+    border-radius: 4px;
+}
+
+.container .right-side button {
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 12px;
+    border-radius: 50px;
+    color: white;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));;
 }
