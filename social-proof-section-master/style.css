@@ -2,4 +2,108 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'League Spartan';
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.container .top-side {
+    display: flex;
+    border: 1px solid red;
+    padding: 30px 0;
+
+    .infos-title {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        .title {
+            font-size: 42px;
+            color: hsl(300, 43%, 22%);
+            width: 60%;
+            font-weight: bold;
+        }
+
+        .paragraph {
+            color: hsl(303, 10%, 53%);
+            width: 80%;
+            font-size: 18px;
+        }
+    }
+}
+
+.container .top-side .ratings {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 16px;
+    .rating-item {
+        background: hsl(300, 24%, 96%);
+        padding: 10px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        color: hsl(300, 43%, 22%);
+        font-weight: bold;
+        .stars {
+            padding: 0 14px;
+        }
+    }
+}
+
+.container .bottom-side {
+    display: flex;
+    gap: 20px;
+
+    .review-card {
+        background: hsl(300, 43%, 22%);
+        height: 200px;
+        padding: 10px;
+        color: hsl(300, 24%, 96%);
+
+        .userinfo {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            border: 1px solid red;
+            padding: 0 10px;
+
+            .credentials {
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+
+                .type {
+                    color: hsl(333, 80%, 67%);
+                    font-size: 14px;
+                }
+            }
+
+            img {
+                height: 50px;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    .review-paragraph {
+        padding: 10px;
+        letter-spacing: 1px;
+        
+    }
 }
